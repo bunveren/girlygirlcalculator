@@ -1,1 +1,1 @@
-![image](https://github.com/bunveren/girlygirlcalculator/assets/123470015/3a6906a2-abc9-4a76-ba23-608b6fb61d9f)
+![image](https://github.com/bunveren/girlygirlcalculator/assets/123470015/e00f3cb9-a08e-4633-b8ee-9b98bf85cbfd)
