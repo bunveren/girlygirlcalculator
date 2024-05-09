@@ -1,0 +1,164 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="GirlyGirlCalculator" Height="800" Width="450" FontSize="15" 
+        Background="#ffe3b6db">
+    <Window.Resources>
+        
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+    
+        
+        <TextBox x:Name="resultLabel" Text="{Binding Path=result}"
+               HorizontalAlignment="Right" VerticalAlignment="Bottom"
+               FontSize="60"
+                 TextWrapping="Wrap"
+                 Background="#ffe3b6db"
+                 BorderThickness="0"
+               Grid.ColumnSpan="4" Grid.Row="0"
+               />
+        
+        
+        <Button x:Name="AC" Content="C"
+                Margin="5" 
+                Grid.Row="1"
+                Grid.Column="0"
+                Style="{StaticResource operatorButtonsStyle}"
+                Click="IslemButton_click"/>
+        <Button x:Name="YUZDE" Content="%"
+                Margin="5" 
+                Grid.Row="1"
+                Grid.Column="1"
+                Style="{StaticResource operatorButtonsStyle}"
+                Click="IslemButton_click"/>
+        <Button x:Name="SIL" Content="/--"
+                Margin="5" 
+                Grid.Row="1"
+                Grid.Column="2"
+                Style="{StaticResource operatorButtonsStyle}"
+                Click="IslemButton_click"/>
+        <Button x:Name="BOL" Content="/"
+                Margin="5" 
+                Grid.Row="1"
+                Grid.Column="3"
+                Style="{StaticResource operatorButtonsStyle}"
+                Click="IslemButton_click"/>
+        <Button x:Name="CARP" Content="*"
+                Margin="5" 
+                Grid.Row="2"
+                Grid.Column="3"
+                Style="{StaticResource operatorButtonsStyle}"
+                Click="IslemButton_click"/>
+        <Button x:Name="CIKAR" Content="-"
+                Margin="5" 
+                Grid.Row="3"
+                Grid.Column="3"
+                Style="{StaticResource operatorButtonsStyle}"
+                Click="IslemButton_click"/>
+        <Button x:Name="TOPLA" Content="+"
+                Margin="5" 
+                Grid.Row="4"
+                Grid.Column="3"
+                Style="{StaticResource operatorButtonsStyle}"
+                Click="IslemButton_click"/>
+        <Button x:Name="ESIT" Content="="
+                Margin="5" 
+                Grid.Row="5"
+                Grid.Column="3"
+                Style="{StaticResource operatorButtonsStyle}"
+                Click="IslemButton_click"/>
+        <Button x:Name="VIRGUL" Content=","
+                Margin="5" 
+                Grid.Row="5"
+                Grid.Column="2"
+                Click="IslemButton_click"
+                Style="{StaticResource numberButtonsStyle}"/>
+
+        <Button x:Name="YEDI" Content="7"
+                Margin="5" 
+                Grid.Row="2"
+                Grid.Column="0"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="SEKIZ" Content="8"
+                Margin="5" 
+                Grid.Row="2"
+                Grid.Column="1"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="DOKUZ" Content="9"
+                Margin="5" 
+                Grid.Row="2"
+                Grid.Column="2"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="DORT" Content="4"
+                Margin="5" 
+                Grid.Row="3"
+                Grid.Column="0"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="BES" Content="5"
+                Margin="5" 
+                Grid.Row="3"
+                Grid.Column="1"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="ALTI" Content="6"
+                Margin="5" 
+                Grid.Row="3"
+                Grid.Column="2"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="BIR" Content="1"
+                Margin="5" 
+                Grid.Row="4"
+                Grid.Column="0"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="IKI" Content="2"
+                Margin="5" 
+                Grid.Row="4"
+                Grid.Column="1"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="UC" Content="3"
+                Margin="5" 
+                Grid.Row="4"
+                Grid.Column="2"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="CIFTSIFIR" Content="00"
+                Margin="5" 
+                Grid.Row="5"
+                Grid.Column="0"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        <Button x:Name="SIFIR" Content="0"
+                Margin="5" 
+                Grid.Row="5"
+                Grid.Column="1"
+                Click="Number_Click"
+                Style="{StaticResource numberButtonsStyle}"/>
+        
+    </Grid>
+</Window>
